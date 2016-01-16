@@ -320,46 +320,47 @@
 
                gifloadImage();
 
-               if( index == 7 ){
-                 $(".part7 .describe").attr("src","http://7xq22v.com2.z0.glb.qiniucdn.com/wind.png");
-                 $(".part7 .bottom_describe").attr("src","http://7xq22v.com2.z0.glb.qiniucdn.com/page_07_font.gif");
-                 // $(".part7 .wind").attr("src","./images/font_wind.png");
-               }else{
-                 $(".part7 .describe").attr("src","");
-                 $(".part7 .bottom_describe").attr("src","");
-                 // $(".part7 .wind").attr("src","");
-               }
+             },20000);
 
-               if( index == 8 ){
-                 $(".part8 .bottom_describe").attr("src","http://7xq22v.com2.z0.glb.qiniucdn.com/page_08_font.gif");
-                 // $(".part8 .wind").attr("src","./images/font_wind.png");
-               }else{
-                 $(".part8 .bottom_describe").attr("src","");
-                 // $(".part8 .wind").attr("src","");
-               }
+             if( index == 7 ){
+               $(".part7 .describe").attr("src","http://7xq22v.com2.z0.glb.qiniucdn.com/wind.png");
+               $(".part7 .bottom_describe").attr("src","http://7xq22v.com2.z0.glb.qiniucdn.com/page_07_font.gif");
+               // $(".part7 .wind").attr("src","./images/font_wind.png");
+             }else{
+               $(".part7 .describe").attr("src","");
+               $(".part7 .bottom_describe").attr("src","");
+               // $(".part7 .wind").attr("src","");
+             }
 
-               if( index == 9 ){
-                 $(".part9 .bottom_describe").attr("src","http://7xq22v.com2.z0.glb.qiniucdn.com/page_09_font.gif");
+             if( index == 8 ){
+               $(".part8 .bottom_describe").attr("src","http://7xq22v.com2.z0.glb.qiniucdn.com/page_08_font.gif");
+               // $(".part8 .wind").attr("src","./images/font_wind.png");
+             }else{
+               $(".part8 .bottom_describe").attr("src","");
+               // $(".part8 .wind").attr("src","");
+             }
 
-               }else{
-                 $(".part9 .bottom_describe").attr("src","");
-               }
+             if( index == 9 ){
+               $(".part9 .bottom_describe").attr("src","http://7xq22v.com2.z0.glb.qiniucdn.com/page_09_font.gif");
 
-               if( index == 10 ){
-                 $(".part10 .bottom_describe").attr("src","http://7xq22v.com2.z0.glb.qiniucdn.com/page_10_font.gif");
+             }else{
+               $(".part9 .bottom_describe").attr("src","");
+             }
 
-               }else{
-                 $(".part10 .bottom_describe").attr("src","");
-               }
+             if( index == 10 ){
+               $(".part10 .bottom_describe").attr("src","http://7xq22v.com2.z0.glb.qiniucdn.com/page_10_font.gif");
 
-               if( index === 12 ){
-                 $(".next_page_direction").hide();
-               }else{
-                 setTimeout(function(){
-                   $(".next_page_direction").show();
-                 },700);
-               }
-             },20000)
+             }else{
+               $(".part10 .bottom_describe").attr("src","");
+             }
+
+             if( index === 12 ){
+               $(".next_page_direction").hide();
+             }else{
+               setTimeout(function(){
+                 $(".next_page_direction").show();
+               },700);
+             }
 
            }
          });
