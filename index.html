@@ -135,13 +135,13 @@
         </a>
       </div>
 
-      <!-- <div class="section part8" id='section8'>
+      <div class="section part8" id='section8'>
         <img class="air_con_block" src="./images/page3/air-condition.png" alt="">
         <img class="wind" src="./images/font_wind.png" alt="">
         <img class="bottom_describe" src="http://7xq22v.com2.z0.glb.qiniucdn.com/page_08_font.gif" alt="">
-      </div> -->
+      </div>
 
-      <!-- <div class="section part9" id='section9'>
+       <div class="section part9" id='section9'>
         <img class="bottom_describe" data-src="http://7xq22v.com2.z0.glb.qiniucdn.com/page_09_font.gif" alt="">
       </div>
 
@@ -170,7 +170,7 @@
           <p>新时代女性创造"充裕"时光。</p>
         </div>
         <img class="sign" src="./images/page1/sign.png" alt="">
-      </div> -->
+      </div>
 
       <!-- <audio id="bgm" loop='loop'>
         <source src="./images/bgm.mp3" type="audio/mpeg">
@@ -186,12 +186,12 @@
         //图片预加载
         var count = 0;
         var pageImage = [];
-        $("img").each(function(){
-            var src = $(this).attr("src") || $(this).data('src');
-            if(!$(this).hasClass("functions")){
-              if (src && !~pageImage.indexOf(src)) pageImage.push(src);
-            }
-        });
+        // $("img").each(function(){
+        //     var src = $(this).attr("src") || $(this).data('src');
+        //     if(!$(this).hasClass("functions")){
+        //       if (src && !~pageImage.indexOf(src)) pageImage.push(src);
+        //     }
+        // });
         // console.log(pageImage);
         var imgArr = ['http://7xq22v.com2.z0.glb.qiniucdn.com/bg1.jpg',   'http://7xq22v.com2.z0.glb.qiniucdn.com/bg2.png', 'http://7xq22v.com2.z0.glb.qiniucdn.com/bg33.jpg', 'http://7xq22v.com2.z0.glb.qiniucdn.com/bg44.jpg', 'http://7xq22v.com2.z0.glb.qiniucdn.com/bg5.jpg', 'http://7xq22v.com2.z0.glb.qiniucdn.com/bg6.jpg', 'http://7xq22v.com2.z0.glb.qiniucdn.com/bg7.jpg', 'http://7xq22v.com2.z0.glb.qiniucdn.com/bg9.png', 'http://7xq22v.com2.z0.glb.qiniucdn.com/bg12.jpg',
                     ];
@@ -291,46 +291,48 @@
                $(".part6 .bottom_describe").attr("src","");
                // $(".part6 .wind").attr("src","");
              }
+             setTimeout(function(){
+               if( index == 7 ){
+                 $(".part7 .describe").attr("src","./images/page7/wind.png");
+                 $(".part7 .bottom_describe").attr("src","http://7xq22v.com2.z0.glb.qiniucdn.com/page_07_font.gif");
+                 // $(".part7 .wind").attr("src","./images/font_wind.png");
+               }else{
+                 $(".part7 .describe").attr("src","");
+                 $(".part7 .bottom_describe").attr("src","");
+                 // $(".part7 .wind").attr("src","");
+               }
 
-             if( index == 7 ){
-               $(".part7 .describe").attr("src","./images/page7/wind.png");
-               $(".part7 .bottom_describe").attr("src","http://7xq22v.com2.z0.glb.qiniucdn.com/page_07_font.gif");
-               // $(".part7 .wind").attr("src","./images/font_wind.png");
-             }else{
-               $(".part7 .describe").attr("src","");
-               $(".part7 .bottom_describe").attr("src","");
-               // $(".part7 .wind").attr("src","");
-             }
+               if( index == 8 ){
+                 $(".part8 .bottom_describe").attr("src","http://7xq22v.com2.z0.glb.qiniucdn.com/page_08_font.gif");
+                 // $(".part8 .wind").attr("src","./images/font_wind.png");
+               }else{
+                 $(".part8 .bottom_describe").attr("src","");
+                 // $(".part8 .wind").attr("src","");
+               }
 
-            //  if( index == 8 ){
-            //    $(".part8 .bottom_describe").attr("src","http://7xq22v.com2.z0.glb.qiniucdn.com/page_08_font.gif");
-            //    // $(".part8 .wind").attr("src","./images/font_wind.png");
-            //  }else{
-            //    $(".part8 .bottom_describe").attr("src","");
-            //    // $(".part8 .wind").attr("src","");
-            //  }
+               if( index == 9 ){
+                 $(".part9 .bottom_describe").attr("src","http://7xq22v.com2.z0.glb.qiniucdn.com/page_09_font.gif");
 
-            //  if( index == 9 ){
-            //    $(".part9 .bottom_describe").attr("src","http://7xq22v.com2.z0.glb.qiniucdn.com/page_09_font.gif");
-             //
-            //  }else{
-            //    $(".part9 .bottom_describe").attr("src","");
-            //  }
-             //
-            //  if( index == 10 ){
-            //    $(".part10 .bottom_describe").attr("src","http://7xq22v.com2.z0.glb.qiniucdn.com/page_10_font.gif");
-             //
-            //  }else{
-            //    $(".part10 .bottom_describe").attr("src","");
-            //  }
-             //
-            //  if( index === 12 ){
-            //    $(".next_page_direction").hide();
-            //  }else{
-            //    setTimeout(function(){
-            //      $(".next_page_direction").show();
-            //    },700);
-            //  }
+               }else{
+                 $(".part9 .bottom_describe").attr("src","");
+               }
+
+               if( index == 10 ){
+                 $(".part10 .bottom_describe").attr("src","http://7xq22v.com2.z0.glb.qiniucdn.com/page_10_font.gif");
+
+               }else{
+                 $(".part10 .bottom_describe").attr("src","");
+               }
+
+               if( index === 12 ){
+                 $(".next_page_direction").hide();
+               }else{
+                 setTimeout(function(){
+                   $(".next_page_direction").show();
+                 },700);
+               }
+             },20000)
+
            }
          });
 
