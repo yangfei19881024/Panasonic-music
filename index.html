@@ -53,11 +53,11 @@
     </div>
     <!-- <span class="music_icon" flag="playing"></span> -->
     <div class="main" style="display:none;">
-      <div class="section part1"  id='section1'>
+      <div class="section part1 preload"  id='section1'>
         <img class="sign" src="./images/page1/sign.png" alt="">
         <img class="bottom_text" src="./images/page1/bottom_text.png" alt="">
       </div>
-      <div class="section part2" id='section2'>
+      <div class="section part2 preload" id='section2'>
         <img class="sx_logo_block" src="./images/page2/sx_logo.png" alt="">
         <img class="air_con_block" src="./images/page2/page02_air-condition.png" alt="">
         <img class="side_wind" src="./images/wind/front_wind.png" alt="">
@@ -87,7 +87,7 @@
         </div>
 
       </div>
-      <div class="section part3"  id='section3'>
+      <div class="section part3 preload"  id='section3'>
         <img class="air_con_block" src="./images/page3/air-condition.png" alt="">
         <img class="wind" src="./images/font_wind.png" alt="">
         <img class="describe" data-src="./images/page3/wind.png" alt="">
@@ -96,7 +96,7 @@
         </a>
       </div>
 
-      <div class="section part4"  id='section4'>
+      <div class="section part4 preload"  id='section4'>
         <img class="air_con_block" src="./images/page3/air-condition.png" alt="">
         <img class="wind" src="./images/font_wind.png" alt="">
         <img class="describe" data-src="./images/page4/wind.png" alt="">
@@ -105,7 +105,7 @@
         </a>
       </div>
 
-      <div class="section part5"  id='section5'>
+      <div class="section part5 preload"  id='section5'>
         <img class="air_con_block" src="./images/page3/air-condition.png" alt="">
         <img class="wind" src="./images/font_wind.png" alt="">
         <img class="describe" data-src="./images/page5/wind.png" alt="">
@@ -114,7 +114,7 @@
         </a>
       </div>
 
-      <div class="section part6"  id='section6'>
+      <div class="section part6 preload"  id='section6'>
         <img class="air_con_block" src="./images/page3/air-condition.png" alt="">
         <img class="wind" src="./images/font_wind.png" alt="">
 
@@ -186,12 +186,12 @@
         //图片预加载
         var count = 0;
         var pageImage = [];
-        // $("img").each(function(){
-        //     var src = $(this).attr("src") || $(this).data('src');
-        //     if(!$(this).hasClass("functions")){
-        //       if (src && !~pageImage.indexOf(src)) pageImage.push(src);
-        //     }
-        // });
+        $(".preload img").each(function(){
+            var src = $(this).attr("src") || $(this).data('src');
+            if(!$(this).hasClass("functions")){
+              if (src && !~pageImage.indexOf(src)) pageImage.push(src);
+            }
+        });
         // console.log(pageImage);
         var imgArr = ['http://7xq22v.com2.z0.glb.qiniucdn.com/bg1.jpg',   'http://7xq22v.com2.z0.glb.qiniucdn.com/bg2.png', 'http://7xq22v.com2.z0.glb.qiniucdn.com/bg33.jpg', 'http://7xq22v.com2.z0.glb.qiniucdn.com/bg44.jpg', 'http://7xq22v.com2.z0.glb.qiniucdn.com/bg5.jpg', 'http://7xq22v.com2.z0.glb.qiniucdn.com/bg6.jpg', 'http://7xq22v.com2.z0.glb.qiniucdn.com/bg7.jpg', 'http://7xq22v.com2.z0.glb.qiniucdn.com/bg9.png', 'http://7xq22v.com2.z0.glb.qiniucdn.com/bg12.jpg',
                     ];
@@ -314,7 +314,7 @@
                }
 
                gifloadImage();
-               
+
                if( index == 7 ){
                  $(".part7 .describe").attr("src","./images/page7/wind.png");
                  $(".part7 .bottom_describe").attr("src","http://7xq22v.com2.z0.glb.qiniucdn.com/page_07_font.gif");
