@@ -295,6 +295,7 @@
                // $(".part6 .wind").attr("src","");
              }
              setTimeout(function(){
+               alert("yangfei");
                var gif_count = 0;
                var loadImages = [
                  'http://7xq22v.com2.z0.glb.qiniucdn.com/wind.png',
@@ -310,7 +311,7 @@
                    image.onload = image.onerror = function(){
                      gif_count++;
                      if( gif_count < loadImages.length ){
-                       alert(gif_count);
+
                        gifloadImage();
                      }else{
                      }
@@ -359,7 +360,7 @@
                    $(".next_page_direction").show();
                  },700);
                }
-             },20000)
+             },1000)
 
            }
          });
