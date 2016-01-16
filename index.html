@@ -292,6 +292,29 @@
                // $(".part6 .wind").attr("src","");
              }
              setTimeout(function(){
+
+               var loadImages = [
+                 'http://7xq22v.com2.z0.glb.qiniucdn.com/page_07_font.gif',
+                 'http://7xq22v.com2.z0.glb.qiniucdn.com/page_08_font.gif',
+                 'http://7xq22v.com2.z0.glb.qiniucdn.com/page_09_font.gif',
+                 'http://7xq22v.com2.z0.glb.qiniucdn.com/page_10_font.gif',
+               ];
+
+               var gifloadImage = function(){
+
+                   var image = new Image();
+                   image.onload = image.onerror = function(){
+                     gif_count++;
+                     if( gif_count < loadImages.length ){
+                       gifloadImage();
+                     }else{
+                     }
+                   }
+                   image.src = loadImages[gif_count];
+               }
+
+               gifloadImage();
+               
                if( index == 7 ){
                  $(".part7 .describe").attr("src","./images/page7/wind.png");
                  $(".part7 .bottom_describe").attr("src","http://7xq22v.com2.z0.glb.qiniucdn.com/page_07_font.gif");
