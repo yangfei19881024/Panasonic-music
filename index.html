@@ -129,7 +129,7 @@
         <img class="air_con_block" src="./images/page3/air-condition.png" alt="">
         <img class="wind" src="./images/font_wind.png" alt="">
 
-        <img class="describe" data-src="./images/page7/wind.png" alt="">
+        <img class="describe" data-src="http://7xq22v.com2.z0.glb.qiniucdn.com/wind.png" alt="">
         <a href="#secondPage">
 	        <img class="bottom_describe" data-src="http://7xq22v.com2.z0.glb.qiniucdn.com/page_07_font.gif" alt="">
         </a>
@@ -297,6 +297,7 @@
              setTimeout(function(){
                var gif_count = 0;
                var loadImages = [
+                 'http://7xq22v.com2.z0.glb.qiniucdn.com/wind.png',
                  'http://7xq22v.com2.z0.glb.qiniucdn.com/page_07_font.gif',
                  'http://7xq22v.com2.z0.glb.qiniucdn.com/page_08_font.gif',
                  'http://7xq22v.com2.z0.glb.qiniucdn.com/page_09_font.gif',
@@ -309,6 +310,7 @@
                    image.onload = image.onerror = function(){
                      gif_count++;
                      if( gif_count < loadImages.length ){
+                       alert(gif_count);
                        gifloadImage();
                      }else{
                      }
@@ -319,7 +321,7 @@
                gifloadImage();
 
                if( index == 7 ){
-                 $(".part7 .describe").attr("src","./images/page7/wind.png");
+                 $(".part7 .describe").attr("src","http://7xq22v.com2.z0.glb.qiniucdn.com/wind.png");
                  $(".part7 .bottom_describe").attr("src","http://7xq22v.com2.z0.glb.qiniucdn.com/page_07_font.gif");
                  // $(".part7 .wind").attr("src","./images/font_wind.png");
                }else{
