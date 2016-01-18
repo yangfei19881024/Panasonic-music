@@ -43,10 +43,9 @@
   </head>
   <body>
   	<div class="shareImage">
-      <!-- <img src="http://clients-tvcstudio.edgepeek.com/images/share_img.png" alt=""> -->
   		<img src="./images/share_img.jpg" alt="">
   	</div>
-    <div class="loading_page" style="opacity:1">
+    <div class="loading_page" style="opacity:1;">
       <img class="loading_img" src="./images/loading.gif" alt="">
     </div>
     <div class="next_page_direction">
@@ -91,27 +90,38 @@
         <img class="air_con_block" src="./images/page3/air-condition.png" alt="">
         <img class="wind" src="./images/font_wind.png" alt="">
         <img class="describe" data-src="./images/page3/wind.png" alt="">
-        <a href="#secondPage">
-	        <img class="bottom_describe" data-src="http://7xq22v.com2.z0.glb.qiniucdn.com/page_03_font.gif" alt="">
-        </a>
+
+        <div class="bottom_describe">
+          <img class="page03_text1" src="./images/page3/page03_text1.png" alt="" />
+          <img class="page03_text2" src="./images/page3/page03_text2.png" alt="" />
+          <img class="page03_text3" src="./images/page3/page03_text3.png" alt="" />
+          <img class="page03_text4" src="./images/page3/page03_text4.png" alt="" />
+          <img class="page03_05" src="./images/page3/page03_5.png" alt="" />
+          <img class="page03_text5" src="./images/page3/page03_text5.png" alt="" />
+        </div>
+
       </div>
 
       <div class="section part4 preload"  id='section4'>
         <img class="air_con_block" src="./images/page3/air-condition.png" alt="">
         <img class="wind" src="./images/font_wind.png" alt="">
         <img class="describe" data-src="./images/page4/wind.png" alt="">
-        <a href="#secondPage">
-	        <img class="bottom_describe" data-src="http://7xq22v.com2.z0.glb.qiniucdn.com/page_04_font.gif" alt="">
-        </a>
+        <div class="bottom_describe">
+          <img class="page_04_01" src="./images/page4/page_04_01.png" alt="" />
+          <img class="page_04_02" src="./images/page4/page_04_02.png" alt="" />
+          <img class="page_04_03" src="./images/page4/page_04_03.png" alt="" />
+        </div>
       </div>
 
       <div class="section part5 preload"  id='section5'>
         <img class="air_con_block" src="./images/page3/air-condition.png" alt="">
         <img class="wind" src="./images/font_wind.png" alt="">
         <img class="describe" data-src="./images/page5/wind.png" alt="">
-        <a href="#secondPage">
-	        <img class="bottom_describe" style="top:20px;" data-src="http://7xq22v.com2.z0.glb.qiniucdn.com/page_05_font.gif" alt="">
-        </a>
+        <div class="bottom_describe part5_describe">
+          <img class="page_05_01" src="./images/page5/page_05_01.png" alt="" />
+          <img class="page_05_02" src="./images/page5/page_05_02.png" alt="" />
+          <img class="page_05_03" src="./images/page5/page_05_03.png" alt="" />
+        </div>
       </div>
 
       <div class="section part6 preload"  id='section6'>
@@ -120,9 +130,10 @@
 
         <img class="describe describe01" data-src="./images/page6/describe01.png" alt="">
         <img class="describe describe02" data-src="./images/page6/describe02.png" alt="">
-        <a href="#secondPage">
-	        <img class="bottom_describe" style="top:20px;" data-src="http://7xq22v.com2.z0.glb.qiniucdn.com/page_06_font.gif" alt="">
-        </a>
+        <div class="bottom_describe part6_describe">
+          <img class="page_06_01" src="./images/page6/page_06_01.png" alt="" />
+          <img class="page_06_02" src="./images/page6/page_06_02.png" alt="" />
+        </div>
       </div>
 
       <div class="section part7" id='section7'>
@@ -130,15 +141,20 @@
         <img class="wind" src="./images/font_wind.png" alt="">
 
         <img class="describe" data-src="http://7xq22v.com2.z0.glb.qiniucdn.com/wind.png" alt="">
-        <a href="#secondPage">
-	        <img class="bottom_describe" data-src="http://7xq22v.com2.z0.glb.qiniucdn.com/page_07_font.gif" alt="">
-        </a>
+        <div class="bottom_describe part6_describe">
+          <img class="page_07_01" src="./images/page7/page_07.png" alt="" />
+        </div>
       </div>
 
       <div class="section part8" id='section8'>
         <img class="air_con_block" src="./images/page3/air-condition.png" alt="">
         <img class="wind" src="./images/font_wind.png" alt="">
-        <img class="bottom_describe" src="http://7xq22v.com2.z0.glb.qiniucdn.com/page_08_font.gif" alt="">
+        <div class="bottom_describe part8_describe">
+          <img class="page_08_01" src="./images/page8/page_08_01.png" alt="" />
+          <img class="page_08_02" src="./images/page8/page_08_02.png" alt="" />
+          <img class="page_08_03" src="./images/page8/page_08_03.png" alt="" />
+          <img class="page_08_04" src="./images/page8/page_08_04.png" alt="" />
+        </div>
       </div>
 
        <div class="section part9" id='section9'>
@@ -179,7 +195,6 @@
     </div>
     <script src="./libs/jquery.min.js"></script>
     <script type="text/javascript" src="./libs/jquery.fullpage.min.js"></script>
-    <script type="text/javascript" src="http://192.168.1.105:8080/target/target-script-min.js#anonymous">
 
     </script>
     <script type="text/javascript">
@@ -196,7 +211,7 @@
             }
         });
         // console.log(pageImage);
-        var imgArr = ['http://7xq22v.com2.z0.glb.qiniucdn.com/bg1.jpg',   'http://7xq22v.com2.z0.glb.qiniucdn.com/bg2.png', 'http://7xq22v.com2.z0.glb.qiniucdn.com/bg33.jpg', 'http://7xq22v.com2.z0.glb.qiniucdn.com/bg44.jpg', 'http://7xq22v.com2.z0.glb.qiniucdn.com/bg5.jpg', 'http://7xq22v.com2.z0.glb.qiniucdn.com/bg6.jpg', 'http://7xq22v.com2.z0.glb.qiniucdn.com/bg7.jpg', 'http://7xq22v.com2.z0.glb.qiniucdn.com/bg9.png', 'http://7xq22v.com2.z0.glb.qiniucdn.com/bg12.jpg',
+        var imgArr = ['http://7xq22v.com2.z0.glb.qiniucdn.com/bg1.jpg',   'http://7xq22v.com2.z0.glb.qiniucdn.com/bg2.png', 'http://7xq22v.com2.z0.glb.qiniucdn.com/bg33.jpg', 'http://7xq22v.com2.z0.glb.qiniucdn.com/bg44.jpg', 'http://7xq22v.com2.z0.glb.qiniucdn.com/bg5.jpg', 'http://7xq22v.com2.z0.glb.qiniucdn.com/bg6.jpg'
                     ];
         imgArr = imgArr.concat(pageImage);
         // console.log(imgArr);
@@ -249,60 +264,41 @@
              canLoadNextSlide = false;
              if( index == 2 ){
                $(".functions").attr("src","http://7xq22v.com2.z0.glb.qiniucdn.com/function.gif");
-               // $('.side_wind').attr("src","./images/wind/front_wind.png")
+
              }else{
                $(".functions").attr("src","");
-               // $('.side_wind').attr("src","");
              }
              if( index == 3 ){
                $(".part3 .describe").attr("src","./images/page3/wind.png");
-               $(".part3 .bottom_describe").attr("src","http://7xq22v.com2.z0.glb.qiniucdn.com/page_03_font.gif");
-               // $(".part3 .wind").attr("src","./images/font_wind.png");
              }else{
                $(".part3 .describe").attr("src","");
-               $(".part3 .bottom_describe").attr("src","");
-               // $(".part3 .wind").attr("src","");
              }
 
              if( index == 4 ){
                $(".part4 .describe").attr("src","./images/page4/wind.png");
-               $(".part4 .bottom_describe").attr("src","http://7xq22v.com2.z0.glb.qiniucdn.com/page_04_font.gif");
-               // $(".part4 .wind").attr("src","./images/font_wind.png");
              }else{
                $(".part4 .describe").attr("src","");
-               $(".part4 .bottom_describe").attr("src","");
-               // $(".part4 .wind").attr("src","");
              }
 
              if( index == 5 ){
                $(".part5 .describe").attr("src","./images/page5/wind.png");
-               $(".part5 .bottom_describe").attr("src","./images/page5/page_05_font.gif");
-               // $(".part5 .wind").attr("src","./images/font_wind.png");
+
              }else{
                $(".part5 .describe").attr("src","");
-               $(".part5 .bottom_describe").attr("src","");
-               // $(".part5 .wind").attr("src","");
              }
 
              if( index == 6 ){
                $(".part6 .describe01").attr("src","./images/page6/describe01.png");
                $(".part6 .describe02").attr("src","./images/page6/describe02.png");
-               $(".part6 .bottom_describe").attr("src","http://7xq22v.com2.z0.glb.qiniucdn.com/page_06_font.gif");
-               // $(".part6 .wind").attr("src","./images/font_wind.png");
              }else{
                $(".part6 .describe").attr("src","");
-               $(".part6 .bottom_describe").attr("src","");
-               // $(".part6 .wind").attr("src","");
+
              }
              setTimeout(function(){
 
                var gif_count = 0;
                var loadImages = [
                  'http://7xq22v.com2.z0.glb.qiniucdn.com/wind.png',
-                 'http://7xq22v.com2.z0.glb.qiniucdn.com/page_07_font.gif',
-                 'http://7xq22v.com2.z0.glb.qiniucdn.com/page_08_font.gif',
-                 'http://7xq22v.com2.z0.glb.qiniucdn.com/page_09_font.gif',
-                 'http://7xq22v.com2.z0.glb.qiniucdn.com/page_10_font.gif',
                ];
 
                var gifloadImage = function(){
@@ -324,34 +320,9 @@
 
              if( index == 7 ){
                $(".part7 .describe").attr("src","http://7xq22v.com2.z0.glb.qiniucdn.com/wind.png");
-               $(".part7 .bottom_describe").attr("src","http://7xq22v.com2.z0.glb.qiniucdn.com/page_07_font.gif");
-               // $(".part7 .wind").attr("src","./images/font_wind.png");
+
              }else{
                $(".part7 .describe").attr("src","");
-               $(".part7 .bottom_describe").attr("src","");
-               // $(".part7 .wind").attr("src","");
-             }
-
-             if( index == 8 ){
-               $(".part8 .bottom_describe").attr("src","http://7xq22v.com2.z0.glb.qiniucdn.com/page_08_font.gif");
-               // $(".part8 .wind").attr("src","./images/font_wind.png");
-             }else{
-               $(".part8 .bottom_describe").attr("src","");
-               // $(".part8 .wind").attr("src","");
-             }
-
-             if( index == 9 ){
-               $(".part9 .bottom_describe").attr("src","http://7xq22v.com2.z0.glb.qiniucdn.com/page_09_font.gif");
-
-             }else{
-               $(".part9 .bottom_describe").attr("src","");
-             }
-
-             if( index == 10 ){
-               $(".part10 .bottom_describe").attr("src","http://7xq22v.com2.z0.glb.qiniucdn.com/page_10_font.gif");
-
-             }else{
-               $(".part10 .bottom_describe").attr("src","");
              }
 
              if( index === 12 ){
@@ -362,7 +333,7 @@
                },700);
              }
 
-           }
+            }
          });
 
          // $.fn.fullpage.moveTo(1)
