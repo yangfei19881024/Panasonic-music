@@ -158,13 +158,13 @@
       </div>
 
        <div class="section part9" id='section9'>
-        <img class="bottom_describe" data-src="http://7xq22v.com2.z0.glb.qiniucdn.com/page_09_font.gif" alt="">
+        <img class="bottom_describe part9_describe" data-src="http://7xq22v.com2.z0.glb.qiniucdn.com/page_09_font.gif" alt="">
       </div>
 
       <div class="section part10" id='section10'>
         <img class="air_con_block" src="./images/page3/air-condition.png" alt="">
         <img class="wind" data-src="./images/font_wind.png" alt="">
-        <img class="bottom_describe" data-src="http://7xq22v.com2.z0.glb.qiniucdn.com/page_10_font.gif" alt="">
+        <img class="bottom_describe part9_describe" data-src="http://7xq22v.com2.z0.glb.qiniucdn.com/page_10_font.gif" alt="">
       </div>
 
       <div class="section part11" id='section11'>
@@ -299,6 +299,9 @@
                var gif_count = 0;
                var loadImages = [
                  'http://7xq22v.com2.z0.glb.qiniucdn.com/wind.png',
+                 'http://7xq22v.com2.z0.glb.qiniucdn.com/bg7.jpg', 'http://7xq22v.com2.z0.glb.qiniucdn.com/bg9.png', 'http://7xq22v.com2.z0.glb.qiniucdn.com/bg12.jpg',
+                 'http://7xq22v.com2.z0.glb.qiniucdn.com/page_09_font.gif',
+                 'http://7xq22v.com2.z0.glb.qiniucdn.com/page_10_font.gif'
                ];
 
                var gifloadImage = function(){
@@ -323,6 +326,20 @@
 
              }else{
                $(".part7 .describe").attr("src","");
+             }
+
+             if( index == 9 ){
+               $(".part9 .bottom_describe").attr("src","http://7xq22v.com2.z0.glb.qiniucdn.com/page_09_font.gif");
+
+             }else{
+               $(".part9 .bottom_describe").attr("src","");
+             }
+
+             if( index == 10 ){
+               $(".part10 .bottom_describe").attr("src","http://7xq22v.com2.z0.glb.qiniucdn.com/page_10_font.gif");
+
+             }else{
+               $(".part10 .bottom_describe").attr("src","");
              }
 
              if( index === 12 ){
