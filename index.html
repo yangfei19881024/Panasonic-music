@@ -195,7 +195,6 @@
     </div>
     <script src="./libs/jquery.min.js"></script>
     <script type="text/javascript" src="./libs/jquery.fullpage.min.js"></script>
-
     </script>
     <script type="text/javascript">
     setTimeout(function() {
@@ -205,7 +204,7 @@
         var count = 0;
         var pageImage = [];
         $(".preload img").each(function(){
-            var src = $(this).attr("src") || $(this).data('src');
+            var src = $(this).data('src');
             if(!$(this).hasClass("functions")){
               if (src && !~pageImage.indexOf(src)) pageImage.push(src);
             }
@@ -214,7 +213,7 @@
         var imgArr = ['http://7xq22v.com2.z0.glb.qiniucdn.com/bg1.jpg',   'http://7xq22v.com2.z0.glb.qiniucdn.com/bg2.png', 'http://7xq22v.com2.z0.glb.qiniucdn.com/bg33.jpg', 'http://7xq22v.com2.z0.glb.qiniucdn.com/bg44.jpg', 'http://7xq22v.com2.z0.glb.qiniucdn.com/bg5.jpg', 'http://7xq22v.com2.z0.glb.qiniucdn.com/bg6.jpg'
                     ];
         imgArr = imgArr.concat(pageImage);
-        // console.log(imgArr);
+        console.log(imgArr);
         var loadImage = function(){
 
             var image = new Image();
