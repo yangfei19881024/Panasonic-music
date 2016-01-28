@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="./css/jquery.fullpage.min.css"/>
+    <link rel="stylesheet" href="./css/index.min.css">
+    <title>冬日温暖!业界首创双NANOE革新技术-松下健康空调(有音乐版)</title>
+    <style>
+      .loading_page{display:-webkit-box;display:-ms-flexbox;display:-webkit-flex;display:flex;position:fixed;top:0;right:0;bottom:0;left:0;z-index:9999;-webkit-box-pack:center;-ms-flex-pack:center;-webkit-justify-content:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;-webkit-align-items:center;align-items:center;}
+     	.shareImage{width: 0; height:0; overflow: hidden; font-size: 0; }
+      .part2.active .functions{
+        -webkit-animation: scale_six 2s ease-in-out 0.4s 1 backwards;
+        animation: scale_six 2s ease-in-out 0.4s 1 backwards;
+      }
+     	.functions{
+        width:210px;
+        position:absolute;
+        top:42%;
+        left:50%;
+        transform:translateX(-50%);
+        -webkit-transform:translateX(-50%)
+      }
+      .functions img{width:100%;}
+      .functions .clearwind{top:-65px;left:112px}.functions .clearspace{top:-12px;left:8px}.functions .clearfurnishing{top:-11px;left:205px}.functions .healthycold{ top: 118px;
+    left: 205px;}.functions .healthyhot{top: 120px;
+    left: 9px;}.functions .healthysleep{bottom:-59px;left:109px}
+      .clearfurnishing,.clearspace,.clearwind,.healthycold,.healthyhot,.healthysleep{position:absolute;width:60%!important}
+
+      @keyframes scale_six
+      {
+        from {opacity:0;transform:translateY(-50px) translateX(-50%);}
+        to {opacity:1;transform:translateY(0) translateX(-50%);}
+      }
+
+      @-webkit-keyframes scale_six
+      {
+        from {opacity:0;-webkit-transform:translateY(-50px) translateX(-50%);}
+        to {opacity:1;-webkit-transform:translateY(0) translateX(-50%);}
+      }
+      @media screen and (device-aspect-ratio: 40/71) {
+      	.page03_text1{
+      		width:25%;
+      	}
+      	.page03_text2{
+      		width:25%;
+      	}
+      	.page03_text4 {
+		    width: 35%;
+		    top: 0px;
+		}
+		.page03_05{
+			left: 95px;
+	    top: 45px;
+		}
+		.page03_text5{
+			bottom:-125px;
+		}
+		.page_04_02{
+			right:56px;
+		}
+    .page_04_03{
+      top:71px;
+    }
+		.page_05_03{
+		    right: 65px;
+		    top: 40px;
+		}
+		.functions{
+			top:41%;
+			width: 180px;
+		}
+		.functions .clearwind {
+		    top: -54px;
+		    left: 93px;
+		}
+		.functions .clearfurnishing {
+		    top: -11px;
+		    left: 176px;
+		}
+		.functions .healthycold {
+		    top: 107px;
+		    left: 177px;
+		}
+		.functions .healthyhot {
+		    top: 108px;
+		    left: 9px;
+		}
+		.functions .healthysleep {
+		    bottom: -41px;
+		    left: 94px;
+		}
+	 }
+</style>
+  </head>
+  <body>
+  	<div class="shareImage">
+  		<img src="./images/share_img.jpg" alt="">
+  	</div>
+    <div class="loading_page" style="opacity:1;">
+      <img class="loading_img" src="./images/loading.gif" alt="">
+    </div>
+    <div class="next_page_direction">
+    </div>
+    <span class="music_icon" flag="playing"></span>
+    <div class="main" style="display:none;">
+      <div class="section part1 preload"  id='section1'>
+        <img class="sign" src="./images/page1/sign.png" alt="">
+        <img class="bottom_text" src="./images/page1/bottom_text.png" alt="">
+      </div>
+      <div class="section part2 preload" id='section2'>
+        <img class="sx_logo_block" src="./images/page2/sx_logo.png" alt="">
+        <img class="air_con_block" src="./images/page2/page02_air-condition.png" alt="">
+        <img class="side_wind" src="./images/wind/front_wind.png" alt="">
+        <img class="love" src="./images/page2/love.png" alt="">
+        <!-- <img class="functions" data-src="./images/page2/function.gif" alt=""> -->
+
+        <div class="functions" id="menu">
+          <img src="./images/page2/healthylife.png" alt="">
+          <a href="#thirdPage" >
+            <img class="clearwind" src="./images/page2/clearwind.png" alt="">
+          </a>
+          <a href="#forthPage" >
+             <img class="clearspace" src="./images/page2/clearspace.png" alt="">
+          </a>
+          <a href="#fifthPage" >
+            <img class="clearfurnishing" src="./images/page2/clearfurnishing.png" alt="">
+          </a>
+          <a href="#sixPage" >
+            <img class="healthyhot" src="./images/page2/healthycold.png" alt="">
+          </a>
+          <a href="#sixPage" >
+            <img class="healthycold" src="./images/page2/healthyhot.png" alt="">
+          </a>
+          <a href="#sevenPage" >
+            <img class="healthysleep" src="./images/page2/healthysleep.png" alt="">
+          </a>
+        </div>
+
+      </div>
+      <div class="section part3 preload"  id='section3'>
+
+          <img class="air_con_block" src="./images/page3/air-condition.png" alt="">
+          <img class="wind" src="./images/font_wind.png" alt="">
+          <a href="#secondPage">
+            <img class="describe" data-src="./images/page3/wind.png" alt="">
+          </a>
+          <div class="bottom_describe">
+            <img class="page03_text1" src="./images/page3/page03_text1.png" alt="" />
+            <img class="page03_text2" src="./images/page3/page03_text2.png" alt="" />
+            <img class="page03_text3" src="./images/page3/page03_text3.png" alt="" />
+            <img class="page03_text4" src="./images/page3/page03_text4.png" alt="" />
+            <img class="page03_05" src="./images/page3/page03_5.png" alt="" />
+            <img class="page03_text5" src="./images/page3/page03_text5.png" alt="" />
+          </div>
+
+      </div>
+
+      <div class="section part4 preload"  id='section4'>
+        <img class="air_con_block" src="./images/page3/air-condition.png" alt="">
+        <img class="wind" src="./images/font_wind.png" alt="">
+        <a href="#secondPage">
+          <img class="describe" data-src="./images/page4/wind.png" alt="">
+        </a>
+        <div class="bottom_describe">
+          <img class="page_04_01" src="./images/page4/page_04_01.png" alt="" />
+          <img class="page_04_02" src="./images/page4/page_04_02.png" alt="" />
+          <img class="page_04_03" src="./images/page4/page_04_03.png" alt="" />
+        </div>
+      </div>
+
+      <div class="section part5 preload"  id='section5'>
+        <img class="air_con_block" src="./images/page3/air-condition.png" alt="">
+        <img class="wind" src="./images/font_wind.png" alt="">
+        <a href="#secondPage">
+          <img class="describe" data-src="./images/page5/wind.png" alt="">
+        </a>
+        <div class="bottom_describe part5_describe">
+          <img class="page_05_01" src="./images/page5/page_05_01.png" alt="" />
+          <img class="page_05_02" src="./images/page5/page_05_02.png" alt="" />
+          <img class="page_05_03" src="./images/page5/page_05_03.png" alt="" />
+        </div>
+      </div>
+
+      <div class="section part6 preload"  id='section6'>
+        <img class="air_con_block" src="./images/page3/air-condition.png" alt="">
+        <img class="wind" src="./images/font_wind.png" alt="">
+        <a href="#secondPage">
+          <img class="describe describe01" data-src="./images/page6/describe01.png" alt="">
+          <img class="describe describe02" data-src="./images/page6/describe02.png" alt="">
+        </a>
+        <div class="bottom_describe part6_describe">
+          <img class="page_06_01" src="./images/page6/page_06_01.png" alt="" />
+          <img class="page_06_02" src="./images/page6/page_06_02.png" alt="" />
+        </div>
+      </div>
+
+      <div class="section part7" id='section7'>
+        <img class="air_con_block" src="./images/page3/air-condition.png" alt="">
+        <img class="wind" src="./images/font_wind.png" alt="">
+        <a href="#secondPage">
+          <img class="describe" data-src="http://7xq22v.com2.z0.glb.qiniucdn.com/wind.png" alt="">
+        </a>
+        <div class="bottom_describe part6_describe">
+          <img class="page_07_01" src="./images/page7/page_07.png" alt="" />
+        </div>
+      </div>
+
+      <div class="section part8" id='section8'>
+        <img class="air_con_block" src="./images/page3/air-condition.png" alt="">
+        <img class="wind" src="./images/font_wind.png" alt="">
+        <div class="bottom_describe part8_describe">
+          <img class="page_08_01" src="./images/page8/page_08_01.png" alt="" />
+          <img class="page_08_02" src="./images/page8/page_08_02.png" alt="" />
+          <img class="page_08_03" src="./images/page8/page_08_03.png" alt="" />
+          <img class="page_08_04" src="./images/page8/page_08_04.png" alt="" />
+        </div>
+      </div>
+
+       <div class="section part9" id='section9'>
+        <img class="bottom_describe part9_describe" data-src="http://7xq22v.com2.z0.glb.qiniucdn.com/page_09_font.gif" alt="">
+      </div>
+
+      <div class="section part10" id='section10'>
+        <img class="air_con_block" src="./images/page3/air-condition.png" alt="">
+        <img class="wind" data-src="./images/font_wind.png" alt="">
+        <img class="bottom_describe part9_describe" data-src="http://7xq22v.com2.z0.glb.qiniucdn.com/page_10_font.gif" alt="">
+      </div>
+
+      <div class="section part11" id='section11'>
+        <img src="./images/page11/page_11_01.png" alt="">
+        <img src="./images/page11/page_11_02.png" alt="">
+        <img src="./images/page11/page_11_03.png" alt="">
+        <img src="./images/page11/page_11_04.png" alt="">
+        <img src="./images/page11/page_11_logo.png" alt="">
+        <img class="logos" src="./images/page11/page_11_logos.png" alt="">
+      </div>
+
+      <div class="section part12" id='section12'>
+        <img class="logo" src="./images/page11/page_11_logo.png" alt="">
+        <img class="sign" src="./images/page1/sign.png" alt="">
+        <div class="describe_text">
+          <p>松下健康空调,</p>
+          <p>守护挚爱家人,收获内心优雅。</p>
+          <p>强大功能为育儿与事业忙碌的</p>
+          <p>新时代女性创造"充裕"时光。</p>
+        </div>
+        <img class="sign" src="./images/page1/sign.png" alt="">
+      </div>
+
+      <audio id="bgm" loop='loop'>
+        <source src="./images/bgm.mp3" type="audio/mpeg">
+      </audio>
+
+    </div>
+    <script src="./libs/jquery.min.js"></script>
+    <script type="text/javascript" src="./libs/jquery.fullpage.min.js"></script>
+    </script>
+    <script type="text/javascript">
+
+    setTimeout(function() {
+      $(function(){
+        var $bgm = $("#bgm");
+        //图片预加载
+        var count = 0;
+        var pageImage = [];
+        $(".preload img").each(function(){
+            var src = $(this).data('src');
+            if(!$(this).hasClass("functions")){
+              if (src && !~pageImage.indexOf(src)) pageImage.push(src);
+            }
+        });
+        // console.log(pageImage);
+        var imgArr = ['http://7xq22v.com2.z0.glb.qiniucdn.com/bg1.jpg',   'http://7xq22v.com2.z0.glb.qiniucdn.com/bg2.png', 'http://7xq22v.com2.z0.glb.qiniucdn.com/bg33.jpg', 'http://7xq22v.com2.z0.glb.qiniucdn.com/bg44.jpg', 'http://7xq22v.com2.z0.glb.qiniucdn.com/bg05.jpg', 'http://7xq22v.com2.z0.glb.qiniucdn.com/bg6.jpg'
+                    ];
+        imgArr = imgArr.concat(pageImage);
+        // console.log(imgArr);
+        var loadImage = function(){
+
+            var image = new Image();
+            image.onload = image.onerror = function(){
+              count++;
+              if( count < imgArr.length ){
+                loadImage();
+              }else{
+                $(".loading_page").remove();
+                $(".main").show();
+                $(".music_icon").css("opacity",1);
+                console.log($bgm);
+                document.getElementById("bgm").play();
+              }
+            }
+            image.src = imgArr[count];
+        }
+
+        loadImage();
+
+        // 添加停留时间, 防止跳页
+        var canLoadNextSlide = false;
+
+        window.canMoveMultiple = false;
+
+        window.mainContainer = $('.main').fullpage({
+
+           touchSensitivity:20,
+           keyboardScrolling: false,
+           anchors: ['firstPage', 'secondPage', 'thirdPage','forthPage','fifthPage','sixPage','sevenPage'],
+           onLeave:function(index, nextIndex){
+             if (window.canMoveMultiple) {
+              // Do Nothing
+              delete window.canMoveMultiple;
+              return true;
+             } else {
+                var factor = nextIndex > index ? 1 : -1;
+                $(".next_page_direction").hide();
+                setTimeout(function() {
+                  canLoadNextSlide = true;
+                  $.fn.fullpage.moveTo(index + factor);
+                }, 400);
+                return canLoadNextSlide;
+             }
+           },
+           afterLoad:function(anchorLink,index){
+             canLoadNextSlide = false;
+             if( index == 2 ){
+               $(".functions").attr("src","http://7xq22v.com2.z0.glb.qiniucdn.com/function.gif");
+
+             }else{
+               $(".functions").attr("src","");
+             }
+             if( index == 3 ){
+               $(".part3 .describe").attr("src","./images/page3/wind.png");
+             }else{
+               $(".part3 .describe").attr("src","");
+             }
+
+             if( index == 4 ){
+               $(".part4 .describe").attr("src","./images/page4/wind.png");
+             }else{
+               $(".part4 .describe").attr("src","");
+             }
+
+             if( index == 5 ){
+               $(".part5 .describe").attr("src","./images/page5/wind.png");
+
+             }else{
+               $(".part5 .describe").attr("src","");
+             }
+
+             if( index == 6 ){
+               $(".part6 .describe01").attr("src","./images/page6/describe01.png");
+               $(".part6 .describe02").attr("src","./images/page6/describe02.png");
+             }else{
+               $(".part6 .describe").attr("src","");
+
+             }
+             setTimeout(function(){
+
+               var gif_count = 0;
+               var loadImages = [
+                 'http://7xq22v.com2.z0.glb.qiniucdn.com/wind.png',
+                 'http://7xq22v.com2.z0.glb.qiniucdn.com/bg7.jpg', 'http://7xq22v.com2.z0.glb.qiniucdn.com/bg9.png', 'http://7xq22v.com2.z0.glb.qiniucdn.com/bg12.jpg',
+                 'http://7xq22v.com2.z0.glb.qiniucdn.com/page_09_font.gif',
+                 'http://7xq22v.com2.z0.glb.qiniucdn.com/page_10_font.gif'
+               ];
+
+               var gifloadImage = function(){
+
+                   var image = new Image();
+                   image.onload = image.onerror = function(){
+                     gif_count++;
+                     if( gif_count < loadImages.length ){
+                       gifloadImage();
+                     }else{
+                     }
+                   }
+                   image.src = loadImages[gif_count];
+               }
+
+               gifloadImage();
+
+             },10000);
+
+             if( index == 7 ){
+               $(".part7 .describe").attr("src","http://7xq22v.com2.z0.glb.qiniucdn.com/wind.png");
+
+             }else{
+               $(".part7 .describe").attr("src","");
+             }
+
+             if( index == 9 ){
+               $(".part9 .bottom_describe").attr("src","http://7xq22v.com2.z0.glb.qiniucdn.com/page_09_font.gif");
+
+             }else{
+               $(".part9 .bottom_describe").attr("src","");
+             }
+
+             if( index == 10 ){
+               $(".part10 .bottom_describe").attr("src","http://7xq22v.com2.z0.glb.qiniucdn.com/page_10_font.gif");
+
+             }else{
+               $(".part10 .bottom_describe").attr("src","");
+             }
+
+             if( index === 12 ){
+               $(".next_page_direction").hide();
+             }else{
+               setTimeout(function(){
+                 $(".next_page_direction").show();
+               },700);
+             }
+
+            }
+         });
+
+        $.fn.fullpage.moveTo(1)
+
+         $(".music_icon").click(function(){
+           var flag = $(this).attr("flag");
+           if( flag === "playing" ){ //暂停它
+             $(this).addClass("active");
+             $(this).attr("flag","plused");
+             document.getElementById("bgm").pause();
+           }else if( flag === "plused" ){ //开启它
+             $(this).removeClass("active");
+             $(this).attr("flag","playing");
+             document.getElementById("bgm").play();
+           }
+         });
+
+         $(".functions a").click(function(){
+            window.canMoveMultiple = true;
+         });
+
+         $('.section a').click(function(){
+            window.canMoveMultiple = true;
+         })
+
+      });
+    }, 2000);
+    </script>
+  </body>
+</html>
