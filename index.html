@@ -8,7 +8,7 @@
     <meta name="format-detection" content="telephone=no">
     <link rel="stylesheet" href="./css/jquery.fullpage.min.css"/>
     <link rel="stylesheet" href="./css/index.min.css">
-    <title>冬日温暖!业界首创双NANOE革新技术-松下健康空调(无音乐版)</title>
+    <title>冬日温暖!业界首创双NANOE革新技术-松下健康空调(音乐版)</title>
     <style>
       .loading_page{display:-webkit-box;display:-ms-flexbox;display:-webkit-flex;display:flex;position:fixed;top:0;right:0;bottom:0;left:0;z-index:9999;-webkit-box-pack:center;-ms-flex-pack:center;-webkit-justify-content:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;-webkit-align-items:center;align-items:center;}
      	.shareImage{width: 0; height:0; overflow: hidden; font-size: 0; }
@@ -105,7 +105,7 @@
     </div>
     <div class="next_page_direction">
     </div>
-    <!-- <span class="music_icon" flag="playing"></span> -->
+    <span class="music_icon" flag="playing"></span>
     <div class="main" style="display:none;">
       <div class="section part1 preload"  id='section1'>
         <img class="sign" src="./images/page1/sign.png" alt="">
@@ -251,9 +251,9 @@
         <img class="sign" src="./images/page1/sign.png" alt="">
       </div>
 
-      <!-- <audio id="bgm" loop='loop'>
+      <audio id="bgm" loop='loop'>
         <source src="./images/bgm.mp3" type="audio/mpeg">
-      </audio> -->
+      </audio>
 
     </div>
     <script src="./libs/jquery.min.js"></script>
@@ -416,7 +416,7 @@
             }
          });
 
-         // $.fn.fullpage.moveTo(1)
+         $.fn.fullpage.moveTo(1)
 
          $(".music_icon").click(function(){
            var flag = $(this).attr("flag");
